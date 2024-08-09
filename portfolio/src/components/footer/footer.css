@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "dff6ae7a2978d569-s";
+    src: url("../../../font/dff6ae7a2978d569-s.p.woff2");
+}
+
+@font-face {
+    font-family: "mulish";
+    src: url("../../../font/mulish-v11-latin-regular.woff2");
+}
+
+footer {
+    width: 100%;
+    height: 150vh;
+}
+
+.footer-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text h1 {
+    font-size: 25vw;
+    font-family: "dff6ae7a2978d569-s";
+    text-transform: uppercase;
+}
+
+.footer-text button {
+    padding: 1.4rem 4rem;
+    border-radius: 50px;
+    border: none;
+    margin-top: 5vw;
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footer-text button a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer-text button span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 20px;
+    background-color: #C2E9FB;
+    border-radius: 50%;
+}

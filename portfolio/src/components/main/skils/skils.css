@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "dff6ae7a2978d569-s";
+    src: url("../../../font/dff6ae7a2978d569-s.p.woff2");
+}
+
+@font-face {
+    font-family: "mulish";
+    src: url("../../../font/mulish-v11-latin-regular.woff2");
+}
+
+.content-skils {
+    width: 100%;
+    height: 100vh;
+    padding: 15vw 0 0 0;
+    display: flex;
+    font-family: "mulish";
+    justify-content: end;
+    gap: 5vw;
+}
+
+.content-skils h2 {
+    padding-bottom: 3vw;
+}
+
+.content-skils ul {
+    list-style: none;
+    padding: 0 2vw;
+}
+
+.content-skils ul li {
+    margin-top: 1vw;
+    display: flex;
+    gap: 15px;
+}

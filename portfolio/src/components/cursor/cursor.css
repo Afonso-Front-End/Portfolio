@@ -1,0 +1,8 @@
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    pointer-events: none;
+    position: fixed;
+}

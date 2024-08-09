@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "dff6ae7a2978d569-s";
+    src: url("../../../font/dff6ae7a2978d569-s.p.woff2");
+}
+@font-face {
+    font-family: "teste";
+    src: url("../../../font/mulish-v11-latin-regular.woff2");
+}
+
+.container-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrapper p {
+    text-align: right;
+    font-size: 2vw;
+    margin-top: 2vw;
+    font-family: "teste";
+}
+.content-wrapper p:nth-child(1) {
+    text-align: left;
+    font-size: 2vw;
+    font-family: "teste";
+    margin-bottom: 2vw;
+}
+
+.content-wrapper h1 {
+    font-family: "dff6ae7a2978d569-s";
+    font-size: 25vw;
+    line-height: 24vw;
+}
