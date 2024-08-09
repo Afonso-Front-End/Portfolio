@@ -22,13 +22,13 @@
 
 .content-wrapper p {
     text-align: right;
-    font-size: 2vw;
+    font-size: 1.2vw;
     margin-top: 2vw;
     font-family: "teste";
 }
 .content-wrapper p:nth-child(1) {
     text-align: left;
-    font-size: 2vw;
+    font-size: 1.2vw;
     font-family: "teste";
     margin-bottom: 2vw;
 }

@@ -1,16 +1,16 @@
 @font-face {
     font-family: "dff6ae7a2978d569-s";
-    src: url("../../../font/dff6ae7a2978d569-s.p.woff2");
+    src: url("../../font/dff6ae7a2978d569-s.p.woff2");
 }
 
 @font-face {
     font-family: "mulish";
-    src: url("../../../font/mulish-v11-latin-regular.woff2");
+    src: url("../../font/mulish-v11-latin-regular.woff2");
 }
 
 footer {
     width: 100%;
-    height: 150vh;
+    height: 200vh;
 }
 
 .footer-text {
@@ -52,4 +52,22 @@ footer {
     left: 20px;
     background-color: #C2E9FB;
     border-radius: 50%;
+}
+
+.links {
+    font-family: "mulish";
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+}
+.links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.links ul li a {
+    color: #FFF;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
 }

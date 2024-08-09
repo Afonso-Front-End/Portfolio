@@ -28,7 +28,23 @@
 }
 
 .content-skils ul li {
-    margin-top: 1vw;
+    padding: 0.3rem 0;
     display: flex;
     gap: 15px;
+    position: relative;
+    overflow: hidden;
+    width: max-content;
+    
+}
+
+.content-skils ul li a {
+    transform: translateY(0);
+    position: absolute;
+    left: 22px;
+}
+
+.content-skils ul li span {
+    transform: translateY(0);
+    
+
 }

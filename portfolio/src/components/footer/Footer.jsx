@@ -1,4 +1,5 @@
 import "./footer.css"
+import { GoArrowDownRight } from "react-icons/go";
 export default function Footer() {
     return (
         <footer>
@@ -10,8 +11,11 @@ export default function Footer() {
                 </button>
             </div>
             <div className="links">
+                <p>©️2024-AFONSO</p>
                 <ul>
-                    <li>jhsa</li>
+                    <li><a href="#"><GoArrowDownRight size={20}/>LINKEDIN</a></li>
+                    <li><a href="#"><GoArrowDownRight size={20}/>GITHUB</a></li>
+                    <li><a href="#"><GoArrowDownRight size={20}/>INSTAGRAN</a></li>
                 </ul>
             </div>
         </footer>
