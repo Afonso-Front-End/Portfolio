@@ -82,11 +82,13 @@ export default function Skils() {
                         <a>TAURI</a></li>
                     <li>
                         <p>-</p>
-                        <span>GSAPGRENSHOK</span>
+                        <span>GSAPGRENSHOK</span>   
                         <a>GSAPGRENSHOK</a>
                     </li>
                 </ul>
+                
             </div>
+           
         </section>
     )
 }

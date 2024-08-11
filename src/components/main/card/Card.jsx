@@ -3,11 +3,12 @@ import gsap from "gsap"
 import ScrollTrigger from "gsap-trial/ScrollTrigger"
 import "./card.css"
 
-import img01 from "./image/img-01.jpg"
-import img02 from "./image/img-02.jpg"
-import img03 from "./image/img-03.jpg"
-import img04 from "./image/img-04.jpg"
-import img05 from "./image/img-05.jpg"
+import img01 from "./image/und-clone.png"
+import img02 from "./image/rejouice-clone.png"
+import img03 from "./image/models.png"
+import img04 from "./image/cadastro.png"
+import img05 from "./image/woodpecker.png"
+import img06 from "./image/nitendo.png"
 
 gsap.registerPlugin(ScrollTrigger)
 export default function Card() {
@@ -26,7 +27,6 @@ export default function Card() {
                 gsap.to(section, {
                     scrollTrigger: {
                         trigger: section,
-                        markers: true,
                         start: "top top",
                         end: index === sections.length ? `+=${lastCard.offsetHeight / 2}` : footer.offsetTop - window.innerHeight,
                         pin: true,
@@ -56,31 +56,32 @@ export default function Card() {
         <div className="container-card">
 
             <section className="card pinned">
-                <div className="img"><img src={img01} alt="" /></div>
+                <div className="img">
+                    <img src={img01} alt="" />
+                </div>
             </section>
 
             <section className="card pinned">
-                <div className="img"><img src={img02} alt="" /></div>
+                <div className="img">
+                    <img src={img02} alt="" />
+                </div>
             </section>
             <section className="card pinned">
-                <div className="img"><img src={img03} alt="" /></div>
+                <div className="img">
+                    <img src={img03} alt="" />
+                </div>
             </section>
-            <section className="card pinned">
-                <div className="img"><img src={img04} alt="" /></div>
+            <section className="card  scroll">
+                <div className="img">
+                    <img src={img06} alt="" />
+                </div>
             </section>
-            <section className="card pinned">
-                <div className="img"><img src={img05} alt="" /></div>
-            </section>
-            <section className="card scroll">
-                <div className="img"><img src={img05} alt="" /></div>
-            </section>
-
-            <section className="footer-card">
+            <div className="footer-card">
                 <button>
                     <span></span>
-                    MORE ABOUT ME
+                    VIEW PROJECTS
                 </button>
-            </section>
+            </div>
         </div>
     )
 }

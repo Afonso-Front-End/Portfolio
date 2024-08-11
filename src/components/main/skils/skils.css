@@ -10,12 +10,13 @@
 
 .content-skils {
     width: 100%;
-    height: 100vh;
-    padding: 15vw 0 0 0;
+    height: 30vh;
+    padding-right: 20vw;
     display: flex;
     font-family: "mulish";
     justify-content: end;
     gap: 5vw;
+    color: #BCBCBC;
 }
 
 .content-skils h2 {
@@ -45,6 +46,4 @@
 
 .content-skils ul li span {
     transform: translateY(0);
-    
-
 }

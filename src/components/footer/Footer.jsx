@@ -10,12 +10,11 @@ export default function Footer() {
         const text = new SplitText(".footer-text h1", { type: "chars" })
         const textChars = text.chars
         gsap.from(textChars, {
-            y: 200,
+            y: 250,
             duration: 0.5,
             stagger: 0.07,
             scrollTrigger: {
                 trigger: ".footer-text",
-                markers: true,
                 start: "top top",
                 end: "bottom bottom",
             }
