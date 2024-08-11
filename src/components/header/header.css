@@ -3,49 +3,21 @@
     src: url("../../font/mulish-v11-latin-regular.woff2");
 }
 
+header {
+    font-family: "mulish";
+    width: 100%;
+    height: 15vh;
+    padding: 0vw 3vw;
+}
 header nav {
+    width: 100%;   
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: 100;
 }
 
-menu {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000 !important;
-    display: flex;
+header nav ul {
+    list-style: none;
 }
-
-.loading {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: #EF6B41;
-}
-
-.loader {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: relative;
-}
-
-.bar {
-    width: 10vw;
-    height: 105vh;
-}
-
-.cont {
-    color: #000000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 10vw;
-}
-

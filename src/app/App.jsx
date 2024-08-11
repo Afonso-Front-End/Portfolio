@@ -14,7 +14,9 @@ export default function App() {
             wrapper: containerRef.current,
             content: "#content",
             smooth: 1,
-            effects: true
+            effects: true,
+            // normalizeScroll: true,
+            // ignoreMobileResize: true,
         })
     },[])
     return (

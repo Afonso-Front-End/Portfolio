@@ -1,7 +1,8 @@
 import { useLayoutEffect } from "react"
 import "./header.css"
 import gsap from "gsap"
-
+import ScrollTrigger from "gsap-trial/ScrollTrigger"
+gsap.registerPlugin(ScrollTrigger)
 export default function Header() {
     // useLayoutEffect(() => {
     //     const startLoader = () => {
@@ -42,34 +43,32 @@ export default function Header() {
     //     })
 
     // }, [])
-    
+
+    useLayoutEffect(() => {
+        const ctx = gsap.context(() => {
+            ScrollTrigger.create({
+                trigger: "header nav",
+                start: "top top",
+                end: "max",
+                pin: true,
+                pinSpacing: false,
+            });
+        })
+
+        return () => {
+            ctx.revert()
+        }
+    }, [])
+
     return (
         <header>
             <nav>
                 <div></div>
                 <ul>
-                    <li></li>
+                    <li>Menu</li>
                 </ul>
             </nav>
-            <div className="loading">
-                <div className="loader">
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="bar"></div>
-                    <div className="cont">
-                        0
-                    </div>
-
-                </div>
-            </div>
-            <menu className="overlay">
+            <menu>
 
             </menu>
         </header>

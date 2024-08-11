@@ -25,6 +25,7 @@ export default function Card() {
                 let endScalePoint = `top+=${nextSections.offsetTop - section.offsetTop} top`;
 
                 gsap.to(section, {
+                    opacity: 0,
                     scrollTrigger: {
                         trigger: section,
                         start: "top top",
@@ -66,16 +67,12 @@ export default function Card() {
                     <img src={img02} alt="" />
                 </div>
             </section>
-            <section className="card pinned">
+            <section className="card scroll">
                 <div className="img">
                     <img src={img03} alt="" />
                 </div>
             </section>
-            <section className="card  scroll">
-                <div className="img">
-                    <img src={img06} alt="" />
-                </div>
-            </section>
+
             <div className="footer-card">
                 <button>
                     <span></span>
