@@ -11,18 +11,16 @@
 footer {
     width: 100%;
     height: 120vh;
-    background-color: #EF6B41;
+    background-color: #A95F3E;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: -1;
 }
 
 .footer-text {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .footer-text h1 {
@@ -31,14 +29,25 @@ footer {
     line-height: 25vw;
     font-family: "dff6ae7a2978d569-s";
     text-transform: uppercase;
-    color: #000000;
+    color: #FFF;
+    text-wrap: nowrap;
+}
+.content-footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-text button {
     padding: 1.4rem 4rem;
     border-radius: 50px;
     border: none;
-    margin-top: 5vw;
+
     background-color: #000000;
     position: relative;
     display: flex;
@@ -82,11 +91,11 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 2vw 4vw;
-    background-color: #EF6B41;
+    background-color: #A95F3E;
     color: #000000;
     font-weight: 900;
     width: 100%;
-
+    position: relative;
 }
 
 .links ul {
@@ -96,7 +105,7 @@ footer {
 }
 
 .links ul li a {
-    color: #000000;
+    color: #FFF;
     text-decoration: none;
     display: flex;
     gap: 10px;

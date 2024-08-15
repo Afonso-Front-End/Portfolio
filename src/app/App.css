@@ -11,4 +11,9 @@
 body::-webkit-scrollbar {
     display: none;
 }
+main {
+    position: relative;
+    z-index: -1;
+}
+
     

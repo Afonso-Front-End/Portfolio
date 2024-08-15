@@ -20,10 +20,10 @@ export default function Wrapper() {
     return (
         <section className="container-wrapper">
             <div className="content-wrapper">
-                {/* <div className="wrapper-title">
-                    <p>FRONT END DEV</p>
-                    <span><GoArrowDownRight size={20} />AFONSO SILVA <br />PORTFOLIO</span>
-                </div> */}
+                <div className="wrapper-title">
+                    {/* <p>DEVELOPPER</p> */}
+                    {/* <span><GoArrowDownRight size={20} />AFONSO SILVA <br />PORTFOLIO</span> */}
+                </div>
             </div>
         </section>
     )

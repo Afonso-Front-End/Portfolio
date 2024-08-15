@@ -8,7 +8,7 @@ export default function Main(){
             <Wrapper/>
             <About/>
             <Skils/>
-            <Card/>
+            {/* <Card/> */}
         </main>
     )
 }

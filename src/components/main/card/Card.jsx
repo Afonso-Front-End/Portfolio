@@ -9,6 +9,7 @@ import img03 from "./image/models.png"
 import img04 from "./image/cadastro.png"
 import img05 from "./image/woodpecker.png"
 import img06 from "./image/nitendo.png"
+import { GoArrowDownRight } from "react-icons/go";
 
 gsap.registerPlugin(ScrollTrigger)
 export default function Card() {
@@ -25,7 +26,6 @@ export default function Card() {
                 let endScalePoint = `top+=${nextSections.offsetTop - section.offsetTop} top`;
 
                 gsap.to(section, {
-                    opacity: 0,
                     scrollTrigger: {
                         trigger: section,
                         start: "top top",
@@ -37,7 +37,9 @@ export default function Card() {
                 });
                 imgs.forEach((img) => {
                     gsap.fromTo(img, { scale: 1 }, {
-                        scale: 0.5,
+                        delay: 2,
+                        scale: 0.95,
+                        duration: 1,
                         ease: "none",
                         scrollTrigger: {
                             trigger: section,
@@ -48,13 +50,21 @@ export default function Card() {
                     })
                 })
             });
+
         })
         return () => {
             ctx.revert()
         }
     }, [])
+
+
     return (
         <div className="container-card">
+            <section className="card pinned">
+                <div className="img">
+                    <img src={img02} alt="" />
+                </div>
+            </section>
 
             <section className="card pinned">
                 <div className="img">
@@ -62,11 +72,6 @@ export default function Card() {
                 </div>
             </section>
 
-            <section className="card pinned">
-                <div className="img">
-                    <img src={img02} alt="" />
-                </div>
-            </section>
             <section className="card scroll">
                 <div className="img">
                     <img src={img03} alt="" />

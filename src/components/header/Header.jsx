@@ -60,17 +60,31 @@ export default function Header() {
         }
     }, [])
 
+    const oppenMenu = () => {
+        const timelineMenu = gsap.timeline()
+        timelineMenu.to("menu",
+            { clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)", delay: 0, duration: 1, ease: "power4.inOut" },
+        );
+    }
+    const closednMenu = () => {
+        const timelineMenu = gsap.timeline()
+        timelineMenu.to("menu",
+            { clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)", delay: 0, duration: 1, ease: "power4.inOut" },
+        );
+    }
+
     return (
         <header>
             <nav>
-                <div></div>
                 <ul>
-                    <li>Menu</li>
+                    <li onClick={oppenMenu}>Menu</li>
                 </ul>
+                <menu>
+                    <ul>
+                        <li onClick={closednMenu}>Closed</li>
+                    </ul>
+                </menu>
             </nav>
-            <menu>
-
-            </menu>
         </header>
     )
 }

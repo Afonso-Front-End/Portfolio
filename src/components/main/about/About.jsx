@@ -23,7 +23,6 @@ export default function About() {
                     trigger: ".text-about",
                     start: "top 50%",
                     end: "bottom bottom",
-                    markers: true
                 }
             })
         })

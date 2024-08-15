@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "../home/Home"
-import Cursor from "../components/cursor/Cursor"
 import "./App.css"
 import gsap from "gsap"
 import ScrollTrigger from "gsap-trial/ScrollTrigger"
@@ -15,15 +14,14 @@ export default function App() {
             content: "#content",
             smooth: 1,
             effects: true,
-            // normalizeScroll: true,
-            // ignoreMobileResize: true,
+            normalizeScroll: true,
+            ignoreMobileResize: true,
         })
-    },[])
+    }, [])
     return (
         <BrowserRouter>
             <div id="container" ref={containerRef}>
                 <div id="content">
-                    {/* <Cursor /> */}
                     <Routes>
                         <Route path="/" element={<Home />} />
                     </Routes>

@@ -22,13 +22,17 @@ export default function Footer() {
     }, [])
     return (
         <footer>
+
             <div className="footer-text">
-                <h1>Interested?</h1>
-                <button>
-                    <span></span>
-                    <a href="mailto:">DROP ME AL EMAIL</a>
-                </button>
+                <div className="content-footer">
+                    <h1>Interested?</h1>
+                    <button>
+                        <span></span>
+                        <a href="mailto:">DROP ME AL EMAIL</a>
+                    </button>
+                </div>
             </div>
+
             <div className="links">
                 <p>©️2024-AFONSO</p>
                 <ul>
